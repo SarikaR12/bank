@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+    <script>
+        class Bank {
+            constructor(name, Balance) {
+                this.name = name;
+                this.Balance = Balance;
+            }
+            createAc(name, Balance) {
+                console.log(`Name : ${this.name},Balance ${this.Balance}`);
+            }
+            deposite(depo) {
+                this.Balance += depo;
+                console.log(`depo ${this.Balance}`);
+            }
+            withdrow(drow) {
+                this.Balance-= drow;
+                console.log(`drow ${this.Balance}`);
+            }
+        }
+
+        c1 = new Bank("Sarika", 5000)
+        c1.createAc();
+        c1.deposite(300);
+        c1.withdrow(500);
+
+
+        c2 = new Bank("sonu", 10000)
+        c2.createAc();
+        c2.deposite(1000);
+        c2.withdrow(200);
+
+
+
+// class student extends school {
+//             constructor(Name, Age, MobileNumber){
+//                 super(Name, Age, MobileNumber)
+//             }
+//             studentdetails(){
+//                 console.log("Admission Sucessfull");
+//                 console.log("Admission Detail");
+//                 this.Admission();
+//             }
+//             studentIcard(Rollno,Std ,Address){
+//                 Rollno;
+//                 this.std = std;
+//                 Address;
+//                 console.log("Icard");
+//                 console.log(`Roll Num :${Rollno}`);
+//                 console.log(`Name : ${this.Name}`);
+//                 console.log(`Standard: ${this.Std}`);
+//                 console.log(`Address: ${this.Address}`);
+//                 console.log(`Contact: ${this.MobileNumber}`);
+//             }
+//             StudentDairry(weight,height){
+//                 this.weight=weight;
+//                 this.height=height;
+//                 console.log("Student height and weight");
+//                 console.log(`weight : ${this.weight}`);
+//                 console.log(`height : ${this.height}`);
+//             }
+//             StudentMarks(Hindi, Guj, Eng, maths,Sceince,pt){
+//                 this.Hindi = Hindi;
+//                 this.Guj = Guj;
+//                 this.Eng = Eng;
+//                 this.maths = maths;
+//                 this.Sceince = Sceince;
+//                 this.pt = pt;
+//                 console.log("StudentMarks");
+//                 console.log(`Hindi :${this.Hindi}`);
+//                 console.log(`Guj :${this.Guj}`);
+//                 console.log(`Eng :${this.Eng}`);
+//                 console.log(`maths :${this.maths}`);
+//                 console.log(`Science :${this.Sceince}`);
+//                 console.log(`pt :${this.pt}`);
+
+//             }
+//             StudentResult(){
+//                 console.log("Result");
+//                 this.Admission();
+//                 this.StudentMarks(97,70,84,76,70,81);
+
+//                 let Total = this.hindi + this.Guj  + this.Eng + this.maths + this.Sceince + this.pt;
+//                 console.log(`Total Marks :${Total}`);
+//                 const per = Total/6;
+//                 console.log(`percentage :${per}%`);
+//             }
+//         }
+//         let s1 = new student("kriva",10,9874563248);
+//         s1.studentdetails();
+//         s1.studentIcard(4332,"kriva");
+//         s1.StudentDairry(4.4,20);
+//         s1.StudentMarks(88,90,78,80,84,94);
+//         s1.StudentResult();
+
+
+
+
+class bank{
+                constructor(name,balance){
+                  this.name = name;
+                  this.balance = balance;  
+                }
+                bankaccount(){
+                    console.log(`Name ${this.name}, balance${this.balance}`) 
+                }
+                deposite(amount){
+                this.balance += amount;
+                console.log(`Deposite ${amount}`);
+                console.log(`Total ${this.balance}`);
+                }
+                withdrawal(amount){
+                    this.balance -= amount;
+                    console.log(`withdrawal ${amount}`);
+                    console.log(`Total ${this.balance}`);
+                }
+                
+            }
+let s1 = new bank("sarika",20000);
+s1.bankaccount();
+s1.withdrawal(200);
+s1.deposite(100)
+
+
+
+    </script>
+</body>
+
+</html>
